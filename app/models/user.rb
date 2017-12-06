@@ -6,12 +6,12 @@ class User < ApplicationRecord
       new_user.token    = auth_info.credentials.token
     end
     verify_current_token(user, auth_info)
+    user
   end
 
   def self.verify_current_token(user, auth_info)
     unless user.token == auth_info.credentials.token
       user.update(token: auth_info.credentials.token)
     end
-    user
   end
 end
