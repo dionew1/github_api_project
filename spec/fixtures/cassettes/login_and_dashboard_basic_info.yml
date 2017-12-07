@@ -1,0 +1,153 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/users/dionew1?access_token=<ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 07 Dec 2017 15:52:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4985'
+      X-Ratelimit-Reset:
+      - '1512662564'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"224eb158ee5586105537edb8ba8e2436"
+      Last-Modified:
+      - Wed, 25 Oct 2017 19:01:50 GMT
+      X-Oauth-Scopes:
+      - repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - "<GITHUB_CLIENT_ID>"
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.057715'
+      X-Github-Request-Id:
+      - D3B1:31B0:EB94B0:1B7F13F:5A2963C5
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"dionew1","id":22304676,"avatar_url":"https://avatars1.githubusercontent.com/u/22304676?v=4","gravatar_id":"","url":"https://api.github.com/users/dionew1","html_url":"https://github.com/dionew1","followers_url":"https://api.github.com/users/dionew1/followers","following_url":"https://api.github.com/users/dionew1/following{/other_user}","gists_url":"https://api.github.com/users/dionew1/gists{/gist_id}","starred_url":"https://api.github.com/users/dionew1/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/dionew1/subscriptions","organizations_url":"https://api.github.com/users/dionew1/orgs","repos_url":"https://api.github.com/users/dionew1/repos","events_url":"https://api.github.com/users/dionew1/events{/privacy}","received_events_url":"https://api.github.com/users/dionew1/received_events","type":"User","site_admin":false,"name":"Dione","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":"I
+        love to learn!","public_repos":44,"public_gists":5,"followers":2,"following":6,"created_at":"2016-09-19T19:42:24Z","updated_at":"2017-10-25T19:01:50Z","private_gists":11,"total_private_repos":0,"owned_private_repos":0,"disk_usage":365,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":0}}'
+    http_version: 
+  recorded_at: Thu, 07 Dec 2017 15:52:37 GMT
+- request:
+    method: get
+    uri: https://api.github.com/users/dionew1?access_token=<ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 07 Dec 2017 15:52:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4984'
+      X-Ratelimit-Reset:
+      - '1512662564'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"224eb158ee5586105537edb8ba8e2436"
+      Last-Modified:
+      - Wed, 25 Oct 2017 19:01:50 GMT
+      X-Oauth-Scopes:
+      - repo, user
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - "<GITHUB_CLIENT_ID>"
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Runtime-Rack:
+      - '0.084090'
+      X-Github-Request-Id:
+      - D3B2:31B0:EB951A:1B7F1FC:5A2963C5
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"dionew1","id":22304676,"avatar_url":"https://avatars1.githubusercontent.com/u/22304676?v=4","gravatar_id":"","url":"https://api.github.com/users/dionew1","html_url":"https://github.com/dionew1","followers_url":"https://api.github.com/users/dionew1/followers","following_url":"https://api.github.com/users/dionew1/following{/other_user}","gists_url":"https://api.github.com/users/dionew1/gists{/gist_id}","starred_url":"https://api.github.com/users/dionew1/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/dionew1/subscriptions","organizations_url":"https://api.github.com/users/dionew1/orgs","repos_url":"https://api.github.com/users/dionew1/repos","events_url":"https://api.github.com/users/dionew1/events{/privacy}","received_events_url":"https://api.github.com/users/dionew1/received_events","type":"User","site_admin":false,"name":"Dione","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":"I
+        love to learn!","public_repos":44,"public_gists":5,"followers":2,"following":6,"created_at":"2016-09-19T19:42:24Z","updated_at":"2017-10-25T19:01:50Z","private_gists":11,"total_private_repos":0,"owned_private_repos":0,"disk_usage":365,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":0}}'
+    http_version: 
+  recorded_at: Thu, 07 Dec 2017 15:52:37 GMT
+recorded_with: VCR 4.0.0

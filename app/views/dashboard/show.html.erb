@@ -1,0 +1,10 @@
+<%= render partial: "shared/navbar" %>
+<div>
+  <img class=profile_pic src= <%=@user.picture%> />
+  <ul>
+    <li class=name><%= @user.name %></li>
+    <li class=followers>Followers <%=@user.followers %></li>
+    <li class=following>Following <%=@user.following %></li>
+    <li class=starred>Starred Repos </li>
+  </ul>
+</div>
