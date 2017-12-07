@@ -1,8 +1,7 @@
 class DashboardController < ApplicationController
 
   def show
-    response = Faraday.get("https://api.github.com/users/#{current_user.login}")
-    user_info = JSON.parse(response.body, symbolize_names: true)
+    @user = GithubUser.profile_info(current_user)
   end
 
 end

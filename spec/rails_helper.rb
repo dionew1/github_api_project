@@ -11,7 +11,7 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.filter_sensitive_data('<GITHUB_CLIENT_ID>') { ENV['GITHUB_CLIENT_ID'] }
   config.filter_sensitive_data('<GITHUB_CLIENT_SECRET>') { ENV['GITHUB_CLIENT_SECRET'] }
-  config.filter_sensitive_data('<ACCESS_TOKEN>') { user.token }
+  config.filter_sensitive_data('<ACCESS_TOKEN>') { User.first.token }
 end
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
