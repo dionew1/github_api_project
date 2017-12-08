@@ -14,7 +14,7 @@ describe "User can view basic info" do
          "image"=>"https://avatars1.githubusercontent.com/u/22304676?v=4",
          "urls"=>{"GitHub"=>"https://github.com/dionew1", "Blog"=>""}},
        "credentials"=>
-        {"token"=>"5013e0b5b2c6882e74db849b70470581fc5504c8", "expires"=>false},
+        {"token"=>ENV["TOKEN"], "expires"=>false},
        "extra"=>
         {"raw_info"=>
           {"login"=>"dionew1"}}})
@@ -24,7 +24,6 @@ describe "User can view basic info" do
     VCR.use_cassette("login_and_dashboard_basic_info") do
       visit "/"
       click_on "Sign in with GitHub"
-      visit "/dashboard"
     end
 
     expect(page).to have_selector ".profile_pic"

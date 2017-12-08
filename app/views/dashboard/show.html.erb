@@ -1,10 +1,32 @@
 <%= render partial: "shared/navbar" %>
-<div>
-  <img class=profile_pic src= <%=@user.picture%> />
+<div id=profile_info>
+  <img class=profile_pic src="<%=@user.picture%>" alt="Profile Picture" style="width:150px;height:150px;"/>
   <ul>
     <li class=name><%= @user.name %></li>
-    <li class=followers>Followers <%=@user.followers %></li>
-    <li class=following>Following <%=@user.following %></li>
-    <li class=starred>Starred Repos </li>
+    <li class=followers>Followers: <%=@user.num_of_followers %></li>
+    <li class=following>Following: <%=@user.num_of_following %></li>
+    <li class=starred>Starred Repos: <%=@user.starred.count %></li>
+    <li class=repo_count>Repositories: <%=@user.repos.count %></li>
   </ul>
 </div>
+
+<section class=organizations>
+  <h3>Organizations</h3>
+  <% @user.orgs.each do |org| %>
+    <p><%= org %></p>
+  <% end %>
+</section>
+
+<section class=repos>
+  <h3>Repositories</h3>
+  <% @user.repos.each do |repo| %>
+    <div>
+      <p><%= repo.name.capitalize %><p>
+      <p>Total commits: <%=repo.commits.count%></p>
+      <p>Last Commit Message: "<%=repo.commits.last[:commit][:message]%>"</p>
+    </div>
+  <% end %>
+</section>
+
+<section>
+</section>
