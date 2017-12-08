@@ -29,6 +29,7 @@
  li {
    list-style-type: none;
    padding: 2px;
+   text-align: left;
  }
 
 .profile_pic {
